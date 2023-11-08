@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    </head>
+
+    <body>
+
+        <h1 id="demo1">11.8 homework/short diary entry </h1>
+        <p> on Montague st, jiwon was not looking on the streets and banged her head <br>
+        against a metal pole. <br>
+    She then rode the R train and came to the Barney building <br>
+She saw her ex here three weeks ago. </p>
+
+        <button id="myBtn">hover here to see if jiwon is okay. <br>
+        if you get the mouse out of the button, jiwon will be sad.</button>
+        <button id="myBtn1">click here to see give jiwon a hug</button>
+       
+       
+       <script>
+       
+
+            var x = document.getElementById("myBtn");
+            var c = document.getElementById("myBtn1");
+            x.addEventListener("mouseover", myFunction);
+            c.addEventListener("click", mySecondFunction);
+            x.addEventListener("mouseout", myThirdFunction);
+            
+            function myFunction() {
+                document.getElementById("demo2").innerHTML += "jiwon is not okay!<br>";
+              }
+              
+              function mySecondFunction() {
+                document.getElementById("demo3").innerHTML += "jiwon hates hugs!<br>";
+              }
+              
+              function myThirdFunction() {
+                document.getElementById("demo4").innerHTML += "jiwon is sad!<br>";
+              }
+
+            </script>
+
+        <h2 id="demo2">status of jiwon<br></h2>
+     <h3 id="demo3"> did jiwon like your hug?<br></h3>
+    <h4 id="demo4"> is jiwon sad? <br> </h4>
+      
+    </body>
+</html>
